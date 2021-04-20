@@ -6,6 +6,10 @@ type QueryParams = Record<string | number, string | number | boolean>
 
 declare module '@redwoodjs/router' {
   interface AvailableRoutes {
+    newTask: (params?: RouteParams<"/tasks/new"> & QueryParams) => "/tasks/new"
+    editTask: (params?: RouteParams<"/tasks/{id:Int}/edit"> & QueryParams) => "/tasks/{id:Int}/edit"
+    task: (params?: RouteParams<"/tasks/{id:Int}"> & QueryParams) => "/tasks/{id:Int}"
+    tasks: (params?: RouteParams<"/tasks"> & QueryParams) => "/tasks"
     about: (params?: RouteParams<"/about"> & QueryParams) => "/about"
     home: (params?: RouteParams<"/"> & QueryParams) => "/"
   }
