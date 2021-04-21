@@ -12,6 +12,7 @@ model Task {
   id        Int        @id @default(autoincrement())
   task      String
   project   String
+  done      Boolean @default(false)
   start     DateTime?
   due       DateTime?
   createdAt DateTime   @default(now())

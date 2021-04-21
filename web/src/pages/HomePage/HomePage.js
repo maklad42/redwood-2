@@ -1,9 +1,9 @@
-import { Link, routes } from '@redwoodjs/router'
+import TaskListCell from 'src/components/TaskListCell'
 
 const HomePage = () => {
   return (
     <>
-      <p>Home</p>
+      <TaskListCell />
     </>
   )
 }
