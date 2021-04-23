@@ -4,6 +4,7 @@ import type FatalErrorPageType from '/Applications/MAMP/htdocs/sandbox/react/rw-
 import type HomePageType from '/Applications/MAMP/htdocs/sandbox/react/rw-blog/web/src/pages/HomePage/HomePage'
 import type NewTaskPageType from '/Applications/MAMP/htdocs/sandbox/react/rw-blog/web/src/pages/NewTaskPage/NewTaskPage'
 import type NotFoundPageType from '/Applications/MAMP/htdocs/sandbox/react/rw-blog/web/src/pages/NotFoundPage/NotFoundPage'
+import type TaskDetailsPageType from '/Applications/MAMP/htdocs/sandbox/react/rw-blog/web/src/pages/TaskDetailsPage/TaskDetailsPage'
 import type TaskPageType from '/Applications/MAMP/htdocs/sandbox/react/rw-blog/web/src/pages/TaskPage/TaskPage'
 import type TasksPageType from '/Applications/MAMP/htdocs/sandbox/react/rw-blog/web/src/pages/TasksPage/TasksPage'
 
@@ -14,6 +15,7 @@ declare global {
   const HomePage: typeof HomePageType
   const NewTaskPage: typeof NewTaskPageType
   const NotFoundPage: typeof NotFoundPageType
+  const TaskDetailsPage: typeof TaskDetailsPageType
   const TaskPage: typeof TaskPageType
   const TasksPage: typeof TasksPageType
 }

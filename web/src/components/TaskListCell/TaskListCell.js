@@ -1,3 +1,5 @@
+import { Link, routes } from '@redwoodjs/router'
+
 export const QUERY = gql`
   query TaskListQuery {
     tasks {
@@ -20,7 +22,9 @@ export const Success = ({ tasks }) => {
   return tasks.map((task) => (
     <article key={task.id}>
       <header>
-        <h2>{task.task}</h2>
+        <h2>
+          <Link to={routes.taskDetails({ id: task.id })}>{task.task}</Link>
+        </h2>
       </header>
       <p>{task.project}</p>
       <div>Start: {task.start}</div>
