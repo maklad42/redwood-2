@@ -1,5 +1,5 @@
 import { Router, Route, Set } from '@redwoodjs/router'
-import BlogLayout from 'src/layouts/BlogLayout'
+import TaskListLayout from 'src/layouts/TaskListLayout'
 
 const Routes = () => {
   return (
@@ -8,7 +8,7 @@ const Routes = () => {
       <Route path="/tasks/{id:Int}/edit" page={EditTaskPage} name="editTask" />
       <Route path="/tasks/{id:Int}" page={TaskPage} name="task" />
       <Route path="/tasks" page={TasksPage} name="tasks" />
-      <Set wrap={BlogLayout}>
+      <Set wrap={TaskListLayout}>
         <Route path="/task-details/{id}" page={TaskDetailsPage} name="taskDetails" />
         <Route path="/about" page={AboutPage} name="about" />
         <Route path="/" page={HomePage} name="home" />

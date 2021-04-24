@@ -1,11 +1,11 @@
-import TasksLayout from 'src/layouts/TasksLayout'
+import TaskListLayout from 'src/layouts/TaskListLayout'
 import EditTaskCell from 'src/components/EditTaskCell'
 
 const EditTaskPage = ({ id }) => {
   return (
-    <TasksLayout>
+    <TaskListLayout>
       <EditTaskCell id={id} />
-    </TasksLayout>
+    </TaskListLayout>
   )
 }
 

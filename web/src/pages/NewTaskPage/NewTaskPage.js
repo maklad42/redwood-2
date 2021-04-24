@@ -1,11 +1,11 @@
-import TasksLayout from 'src/layouts/TasksLayout'
+import TaskListLayout from 'src/layouts/TaskListLayout'
 import NewTask from 'src/components/NewTask'
 
 const NewTaskPage = () => {
   return (
-    <TasksLayout>
+    <TaskListLayout>
       <NewTask />
-    </TasksLayout>
+    </TaskListLayout>
   )
 }
 
