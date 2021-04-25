@@ -9,7 +9,7 @@ const Routes = () => {
       <Route path="/tasks/{id:Int}" page={TaskPage} name="task" />
       <Route path="/tasks" page={TasksPage} name="tasks" />
       <Set wrap={TaskListLayout}>
-        <Route path="/task-details/{id}" page={TaskDetailsPage} name="taskDetails" />
+        <Route path="/task-details/{id:Int}" page={TaskDetailsPage} name="taskDetails" />
         <Route path="/about" page={AboutPage} name="about" />
         <Route path="/" page={HomePage} name="home" />
       </Set>

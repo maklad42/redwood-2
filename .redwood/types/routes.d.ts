@@ -10,7 +10,7 @@ declare module '@redwoodjs/router' {
     editTask: (params?: RouteParams<"/tasks/{id:Int}/edit"> & QueryParams) => "/tasks/{id:Int}/edit"
     task: (params?: RouteParams<"/tasks/{id:Int}"> & QueryParams) => "/tasks/{id:Int}"
     tasks: (params?: RouteParams<"/tasks"> & QueryParams) => "/tasks"
-    taskDetails: (params?: RouteParams<"/task-details/{id}"> & QueryParams) => "/task-details/{id}"
+    taskDetails: (params?: RouteParams<"/task-details/{id:Int}"> & QueryParams) => "/task-details/{id:Int}"
     about: (params?: RouteParams<"/about"> & QueryParams) => "/about"
     home: (params?: RouteParams<"/"> & QueryParams) => "/"
   }

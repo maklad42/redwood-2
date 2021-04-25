@@ -1,7 +1,8 @@
 export const QUERY = gql`
-  query SingleTaskQuery {
-    singleTask {
+  query SingleTaskQuery($id: Int!) {
+    singleTask(id: $id) {
       id
+      task
     }
   }
 `
